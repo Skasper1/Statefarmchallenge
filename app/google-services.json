@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "21190177010",
+    "project_id": "statefarmchallenge-ecdda",
+    "storage_bucket": "statefarmchallenge-ecdda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21190177010:android:a4b84489624a2d302d206b",
+        "android_client_info": {
+          "package_name": "com.example.statefarmchallenge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd5xnekK5oDb3qJMxRzrSlJrneuHBdAHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
