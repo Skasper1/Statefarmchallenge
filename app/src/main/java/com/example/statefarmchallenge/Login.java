@@ -35,7 +35,7 @@ public class Login  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_main);
 
         // taking instance of FirebaseAuth
         mAuth = FirebaseAuth.getInstance();
@@ -44,7 +44,7 @@ public class Login  extends AppCompatActivity {
         Email = findViewById(R.id.Email);
         Password = findViewById(R.id.Password);
         LoginBtn = findViewById(R.id.LoginBtn);
-        progressbar = findViewById(R.id.progressBar);
+        //progressbar = findViewById(R.id.progressBar);
 
 
         LoginBtn.setOnClickListener(new View.OnClickListener() {
