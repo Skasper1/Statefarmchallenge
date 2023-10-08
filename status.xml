@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="420dp"
+        android:layout_height="80dp"
+        android:background="#F01716"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="420dp"
+        android:layout_height="80dp"
+        android:background="#F01716"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="414dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/MileageToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Mileage Today"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/mileagetoday"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/MileageThisWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Mileage This Week"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/mileagethisweek"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/TotalMileage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Total Mileage"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/totalmileage"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/LastOilChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Days Since Last Oil Change"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/lastoilchange"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/MilesSinceLastOilChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Miles Since Last Oil Change"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/milessinceoil"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/MilesSinceBrakeChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Miles Since Brakes Replaced"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/brakechange"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Log Out"
+        android:backgroundTint="#00F01716"
+        android:drawableTop="@drawable/baseline_logout_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Profile"
+        android:backgroundTint="#F01716"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableTop="@drawable/round_account_circle_24"/>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="138dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Status"
+            android:backgroundTint="#F01716"
+            android:drawableTop="@drawable/baseline_info_24"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="138dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableRow"
+        app:layout_constraintStart_toEndOf="@+id/tableRow2" >
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Trends"
+            android:backgroundTint="#F01716"
+            android:drawableTop="@drawable/baseline_trending_up_24"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="138dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Weather"
+            android:backgroundTint="#F01716"
+            android:drawableTop="@drawable/baseline_cloud_24"/>
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
